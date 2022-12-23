@@ -16,7 +16,7 @@ export default {
   themeConfig: {
     logo: '/logo.png',
     recommend: {
-      mpwx: "../public/wx_qrcode.jpg",
+      mpwx: "/wx_qrcode.jpg",
     },
     footer: {
       message: "Released under the MIT License.",
