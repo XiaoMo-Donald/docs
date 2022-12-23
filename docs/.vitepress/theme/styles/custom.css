@@ -1,0 +1,5 @@
+/* 自定义样式 */
+.VPHero.has-image .text {
+   line-height: 1.7em;
+    font-size: 48px;
+}

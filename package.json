@@ -1,0 +1,30 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "分享个人在IT行业成长记录、知识体系。",
+  "private": true,
+  "author": "小莫唐尼<https://github.com/XiaoMoDonnie>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vitepress dev docs --port 8080 --max-old-space-size=50000",
+    "build": "vitepress build docs",
+    "serve": "vitepress serve docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XiaoMoDonnie/docs"
+  },
+  "keywords": [ 
+    "vue",
+    "TypeScript", 
+    "小莫唐尼"
+  ],
+  "bugs": {
+    "url": "https://github.com/XiaoMoDonnie/docs/issues"
+  },
+  "devDependencies": {
+    "sitemap-ts": "^1.1.0",
+    "vitepress": "1.0.0-alpha.32",
+    "vue": "^3.2.45"
+  }
+}
