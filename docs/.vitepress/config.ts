@@ -1,20 +1,42 @@
-import { generateSitemap as sitemap } from 'sitemap-ts'
+import { generateSitemap as sitemap } from "sitemap-ts";
 import sidebar from "./sidebar";
 import socialLinks from "./link";
 import algolia from "./algolia";
 
+import mdItCustomAttrs from "markdown-it-custom-attrs";
 
 export default {
-  outDir: '../dist',
+  head: [
+    [
+      "link",
+      {
+        rel: "stylesheet",
+        href: "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css",
+      },
+    ],
+    [
+      "script",
+      {
+        src: "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js",
+      },
+    ],
+  ],
+  outDir: "../dist",
   title: "小莫唐尼知识库",
   description: "一起分享技术的快乐.",
   lastUpdated: true,
   markdown: {
     theme: "material-palenight",
     lineNumbers: true,
+    config: (md) => {
+      // use more markdown-it plugins!
+      md.use(mdItCustomAttrs, "image", {
+        "data-fancybox": "gallery",
+      });
+    },
   },
   themeConfig: {
-    logo: '/logo.png',
+    logo: "/logo.png",
     recommend: {
       mpwx: "/wx_qrcode.png",
     },
@@ -29,25 +51,25 @@ export default {
       { text: "🔧 编程工具", link: "/tool/" },
       { text: "🌱 青葱岁月", link: "/green/guide" },
       {
-        text: '作者站点',
+        text: "作者站点",
         items: [
           {
-            text: '作者主页',
-            link: 'https://www.925i.cn'
+            text: "作者主页",
+            link: "https://www.925i.cn",
           },
           {
-            text: '作者博客',
-            link: 'https://b.925i.cn'
+            text: "作者博客",
+            link: "https://b.925i.cn",
           },
           {
-            text: 'uni-halo文档',
-            link: 'https://uni-halo.925i.cn'
+            text: "uni-halo文档",
+            link: "https://uni-halo.925i.cn",
           },
           {
-            text: 'uni-halo仓库',
-            link: 'https://gitee.com/ialley-workshop-open/uni-halo'
+            text: "uni-halo仓库",
+            link: "https://gitee.com/ialley-workshop-open/uni-halo",
           },
-        ]
+        ],
       },
     ],
     editLink: {
@@ -58,6 +80,6 @@ export default {
     socialLinks,
   },
   async buildEnd() {
-    await sitemap({ hostname: 'https://docs.925i.cn/' });
-  }
-}
+    await sitemap({ hostname: "https://docs.925i.cn/" });
+  },
+};
