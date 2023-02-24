@@ -71,6 +71,7 @@ export default {
           },
         ],
       },
+      { text: "🌱 技术杂项", link: "/sundry/guide" },
     ],
     editLink: {
       pattern: "https://github.com/XiaoMoDonnie/docs/edit/main/docs/:path",

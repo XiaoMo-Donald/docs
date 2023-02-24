@@ -5,10 +5,10 @@ export default {
       collapsible: false,
       collapsed: false,
       items: [
-        { text: "阅读须知", link: "/guide" }, 
+        { text: "阅读须知", link: "/guide" },
         { text: "2022 年终总结", link: "/report/2022" },
       ],
-    }, 
+    },
     {
       text: "📓 前端算法 JS",
       collapsible: true,
@@ -19,9 +19,7 @@ export default {
       text: "📘 TS 学习",
       collapsible: true,
       collapsed: false,
-      items: [
-        { text: "导读", link: "/ts/guide" }, 
-      ],
+      items: [{ text: "导读", link: "/ts/guide" }],
     },
     {
       text: "📗 编程学习",
@@ -29,7 +27,7 @@ export default {
       collapsed: false,
       items: [
         { text: "发布 npm 包", link: "/program/npm" },
-        { text: "algolia 搜索", link: "/program/algolia" }
+        { text: "algolia 搜索", link: "/program/algolia" },
       ],
     },
     {
@@ -39,7 +37,7 @@ export default {
       items: [{ text: "Git 命令", link: "/memo/git" }],
     },
   ],
-  '/open/': [
+  "/open/": [
     {
       text: "🧑‍💻 开源之路",
       collapsible: true,
@@ -50,24 +48,31 @@ export default {
       ],
     },
   ],
-  '/green/': [
+  "/green/": [
     {
       text: "🎈个人经历",
       collapsible: true,
       collapsed: false,
-      items: [
-        { text: "阅读须知", link: "/green/guide" },
-      ],
+      items: [{ text: "阅读须知", link: "/green/guide" }],
     },
   ],
-  '/tool/': [
+  "/tool/": [
     {
       text: "🎒 常用工具",
       collapsible: true,
       collapsed: false,
+      items: [{ text: "Emoji图标", link: "/tool/emoji-list" }],
+    },
+  ],
+  "/sundry/": [
+    {
+      text: "🎒 技术杂项",
+      collapsible: true,
+      collapsed: false,
       items: [
-        { text: "Emoji图标", link: "/tool/emoji-list" },
+        { text: "阅读须知", link: "/sundry/guide" },
+        { text: "vitepress 大图预览", link: "/sundry/doc-add-gallery" },
       ],
     },
-  ]
+  ],
 };
