@@ -48,6 +48,7 @@ export default {
       { text: "🧑‍💻 开源之路", link: "/open/guide" }, 
       { text: "🔥 TS 学习", link: "/ts/guide" },
       { text: "🔧 编程工具", link: "/tool/" },
+      { text: "🔍 技术杂项", link: "/sundry/guide" },
       {
         text: "💻 作者站点",
         items: [
@@ -69,7 +70,6 @@ export default {
           },
         ],
       },
-      { text: "🔍 技术杂项", link: "/sundry/guide" },
       { text: "🌱 青葱岁月", link: "/green/guide" },
       { text: "📝 关于我", link: "/about/guide" },
     ],
