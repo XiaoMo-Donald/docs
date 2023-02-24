@@ -2,7 +2,7 @@
 
 ## 背景 ~new
 
-最近在折腾 VitePress，搭建了一个文档项目：[ChoDocs](https://chodocs.cn/)，不过文档还不支持搜索功能，虽然目前内容不多，但待我同步完之后，搜索就很有必要了。
+最近在折腾 VitePress，搭建了一个文档项目，不过文档还不支持搜索功能，虽然目前内容不多，但待我同步完之后，搜索就很有必要了。
 
 之前看 VitePress 官网发现没有相关介绍文档，不过好在自己对于 algolia 比较熟悉了，于是自己在项目中集成了。
 
@@ -36,13 +36,13 @@
 
 在上一步我们获取了公开的 key，在这里我们就来配置一下，将上述的 `Search-Only API Key` 填到 apiKey 字段中，**私有的 key 不要填**！
 
-修改文件在 `docs/.vitepress/config` 文件中，具体可参考链接 [config.ts](https://github.com/Chocolate1999/chodocs/blob/main/docs/.vitepress/config.ts)。
+修改文件在 `docs/.vitepress/config` 文件中 。
 
 ```js
 algolia: {
   appId: 'RDDxxx', // 需要替换
   apiKey: '9302dbxxx', // 需要替换
-  indexName: 'chodocs', // 需要替换
+  indexName: 'docs', // 需要替换
   placeholder: '请输入关键词',
   buttonText: '搜索',
 }
@@ -61,8 +61,8 @@ algolia: {
 
 ```json
 {
-  "index_name": "chodocs", // 填写自己的索引名称
-  "start_urls": ["https://chodocs.cn/"], // 填写自己的网站地址
+  "index_name": "docs", // 填写自己的索引名称
+  "start_urls": ["https://docs.925i.cn.cn/"], // 填写自己的网站地址
   "rateLimit": 8,
   "maxDepth": 10,
   "selectors": {
