@@ -10,12 +10,6 @@ export default {
       ],
     },
     {
-      text: "📓 前端算法 JS",
-      collapsible: true,
-      collapsed: false,
-      items: [{ text: "导读", link: "/algorithm/guide" }],
-    },
-    {
       text: "📘 TS 学习",
       collapsible: true,
       collapsed: false,
@@ -50,7 +44,7 @@ export default {
   ],
   "/green/": [
     {
-      text: "🎈个人经历",
+      text: "🌱 青葱岁月",
       collapsible: true,
       collapsed: false,
       items: [{ text: "阅读须知", link: "/green/guide" }],
@@ -66,12 +60,22 @@ export default {
   ],
   "/sundry/": [
     {
-      text: "🎒 技术杂项",
+      text: "🔍 技术杂项",
       collapsible: true,
       collapsed: false,
       items: [
         { text: "阅读须知", link: "/sundry/guide" },
         { text: "vitepress 大图预览", link: "/sundry/doc-add-gallery" },
+      ],
+    },
+  ],
+  "/about/": [
+    {
+      text: "📝 关于我",
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: "开篇", link: "/about/guide" },
       ],
     },
   ],

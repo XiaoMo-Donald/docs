@@ -14,10 +14,10 @@ hero:
       link: /guide
     - theme: alt
       text: 程序人生
-      link: /green/ch
+      link: /green/guide
     - theme: alt
       text: 关于我
-      link: https://github.com/XiaoMoDonnie
+      link: /about/guide
 features:
   - icon: 📓
     title: 前端算法

@@ -45,13 +45,11 @@ export default {
       copyright: "Copyright © 2022-PRESENT 小莫唐尼 contributors",
     },
     nav: [
-      { text: "🧑‍💻 开源之路", link: "/open/guide" },
-      { text: "🔥 前端算法", link: "/algorithm/guide" },
+      { text: "🧑‍💻 开源之路", link: "/open/guide" }, 
       { text: "🔥 TS 学习", link: "/ts/guide" },
       { text: "🔧 编程工具", link: "/tool/" },
-      { text: "🌱 青葱岁月", link: "/green/guide" },
       {
-        text: "作者站点",
+        text: "💻 作者站点",
         items: [
           {
             text: "作者主页",
@@ -71,7 +69,9 @@ export default {
           },
         ],
       },
-      { text: "🌱 技术杂项", link: "/sundry/guide" },
+      { text: "🔍 技术杂项", link: "/sundry/guide" },
+      { text: "🌱 青葱岁月", link: "/green/guide" },
+      { text: "📝 关于我", link: "/about/guide" },
     ],
     editLink: {
       pattern: "https://github.com/XiaoMoDonnie/docs/edit/main/docs/:path",
