@@ -6,26 +6,21 @@ export default {
       collapsed: false,
       items: [
         { text: "阅读须知", link: "/guide" }, 
-        { text: "2022 年终总结", link: "/2022" },
+        { text: "2022 年终总结", link: "/report/2022" },
       ],
-    },
+    }, 
     {
       text: "📓 前端算法 JS",
       collapsible: true,
       collapsed: false,
-      items: [{ text: "导读", link: "/algorithm/ch" }],
+      items: [{ text: "导读", link: "/algorithm/guide" }],
     },
     {
       text: "📘 TS 学习",
       collapsible: true,
       collapsed: false,
       items: [
-        { text: "导读", link: "/ts/ch" },
-        { text: "环境配置", link: "/ts/ch0" },
-        { text: "基础操作", link: "/ts/ch1" },
-        { text: "工具类", link: "/ts/ch2" },
-        { text: "函数系统", link: "/ts/ch3" },
-        { text: "泛型", link: "/ts/ch4" },
+        { text: "导读", link: "/ts/guide" }, 
       ],
     },
     {
@@ -33,15 +28,26 @@ export default {
       collapsible: true,
       collapsed: false,
       items: [
-        { text: "发布 npm 包", link: "/program/ch0" },
-        { text: "给 VitePress 添加 algolia 搜索", link: "/program/ch1" }
+        { text: "发布 npm 包", link: "/program/npm" },
+        { text: "algolia 搜索", link: "/program/algolia" }
       ],
     },
     {
       text: "📝 备忘录",
       collapsible: true,
       collapsed: false,
-      items: [{ text: "Git 命令", link: "/memo/ch0" }],
+      items: [{ text: "Git 命令", link: "/memo/git" }],
+    },
+  ],
+  '/open/': [
+    {
+      text: "🧑‍💻 开源之路",
+      collapsible: true,
+      collapsed: false,
+      items: [
+        { text: "开源导读", link: "/open/guide" },
+        { text: "uni-halo", link: "/open/uni-halo" },
+      ],
     },
   ],
   '/green/': [
@@ -50,17 +56,17 @@ export default {
       collapsible: true,
       collapsed: false,
       items: [
-        { text: "阅读须知", link: "/green/ch" },
+        { text: "阅读须知", link: "/green/guide" },
       ],
     },
   ],
   '/tool/': [
     {
-      text: "🎒 常用",
+      text: "🎒 常用工具",
       collapsible: true,
       collapsed: false,
       items: [
-        { text: "emoji-list", link: "/tool/emoji-list" },
+        { text: "Emoji图标", link: "/tool/emoji-list" },
       ],
     },
   ]

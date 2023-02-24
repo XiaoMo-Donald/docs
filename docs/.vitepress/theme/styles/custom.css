@@ -1,5 +1,16 @@
 /* 自定义样式 */
 .VPHero.has-image .text {
-   line-height: 1.7em;
+    line-height: 1.7em;
     font-size: 48px;
 }
+.VPHome {
+    padding-bottom: 0 !important;
+}
+/* .VPTeamPage {
+    padding-bottom: 0!important;
+}*/
+@media (min-width: 768px) {
+    .VPTeamPage {
+        padding-bottom: 80px!important;
+    }
+} 
