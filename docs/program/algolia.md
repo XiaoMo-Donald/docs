@@ -52,7 +52,7 @@ algolia: {
 
 将上述获取的 `Admin API Key` 添加到 Github Secrets 中，如下图所示，创建 `API_KEY` 和 `APPLICATION_ID` 两个字段，一会在 ci 中会使用到。
 
-![](https://img-blog.csdnimg.cn/2176c7e486e3491986719149b8888e17.png)
+![](https://img-blog.csdnimg.cn/dc1e2bca54b64cda9771d78b13dd6046.png)
 
 
 ### 创建 crawlerConfig.json
@@ -118,8 +118,5 @@ jobs:
 
 ## 结尾
 
-关于这个搜索个人觉得只是满足了基本的需求，而 algolia 官网的那个搜索才会功能更全面，而我之前在公司项目中就根据官网效果做了一个搜索，可以访问[帮助中心](https://coding.net/help)体验。
-
-![](https://img-blog.csdnimg.cn/3079ad42e46740bab66022392128852a.png)
-
-预计 23 年我会把这个搜索做一份开源版本，敬请期待。
+关于这个搜索个人觉得只是满足了基本的需求，而 algolia 官网的那个搜索才会功能更全面。
+ 
