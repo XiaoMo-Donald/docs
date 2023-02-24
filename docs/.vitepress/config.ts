@@ -24,7 +24,7 @@ export default {
   outDir: "../dist",
   title: "小莫唐尼知识库",
   description: "一起分享技术的快乐.",
-  lastUpdated: true,
+  lastUpdated:true,
   markdown: {
     theme: "material-palenight",
     lineNumbers: true,
@@ -75,6 +75,7 @@ export default {
     ],
     editLink: {
       pattern: "https://github.com/XiaoMoDonnie/docs/edit/main/docs/:path",
+      text:"帮我纠错"
     },
     algolia,
     sidebar,
