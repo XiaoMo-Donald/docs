@@ -6,7 +6,7 @@
 
 之前看 VitePress 官网发现没有相关介绍文档，不过好在自己对于 algolia 比较熟悉了，于是自己在项目中集成了。
 
-![](https://img-blog.csdnimg.cn/9d54f32394d34a639c408da4487ade8f.png)
+![](https://img.925i.cn/file/d5558c70a8e742787f54e.png)
 
 ## 前期准备
 
@@ -14,11 +14,11 @@
 
 需要再 [algolia 官网](https://www.algolia.com/doc/) 注册一个账号，或者直接选择以 GitHub 身份登录。
 
-![](https://img-blog.csdnimg.cn/02f437bc10b24bc8add0931246dd400a.png)
+![](https://img.925i.cn/file/68a0d319112282a9386a8.png)
 
 登录之后会进入控制台页面，点击右上角头像，会有一个设置选项，之后来到 Applications 这里，去创建一个应用，以我自己的为例，下图已经创建好了「chodocs」。
 
-![](https://img-blog.csdnimg.cn/57e67874de2a432e921eeaec8d85bc5d.png)
+![](https://img.925i.cn/file/9227fd16aa2461711f5dc.png)
 
 ## 配置
 
@@ -26,12 +26,11 @@
 
 如图下所示，进入 API Keys 页面。
 
-![](https://img-blog.csdnimg.cn/d52d661812bd42afa80a0c468c2bc768.png)
+![](https://img.925i.cn/file/ce74df96b52465962256d.png)
 
 会看到如下界面，一个是可公开的，`Search-Only API Key` 是待会我们在 VitePress 项目中会使用的，而 `Admin API Key` 是用于一会爬虫的 key，因为是私有的，所以一会放在 Github Secrets 中。
 
-![](https://img-blog.csdnimg.cn/0ac511b6fe864070848b57505cf9d465.png)
-
+![](https://img.925i.cn/file/806fdf3aee60e4bebcb59.png) 
 ### 在文档中填写 key
 
 在上一步我们获取了公开的 key，在这里我们就来配置一下，将上述的 `Search-Only API Key` 填到 apiKey 字段中，**私有的 key 不要填**！
@@ -52,7 +51,7 @@ algolia: {
 
 将上述获取的 `Admin API Key` 添加到 Github Secrets 中，如下图所示，创建 `API_KEY` 和 `APPLICATION_ID` 两个字段，一会在 ci 中会使用到。
 
-![](https://img-blog.csdnimg.cn/dc1e2bca54b64cda9771d78b13dd6046.png)
+![](https://img.925i.cn/file/82ee2352fcf956bcef620.png)
 
 
 ### 创建 crawlerConfig.json
